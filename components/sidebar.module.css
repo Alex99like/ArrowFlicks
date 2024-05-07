@@ -1,0 +1,15 @@
+.navlink {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navlink:hover {
+  background-color: #e5d5fa;
+  color: #9854f6;
+}
+
+.navlink[data-active='true'] {
+  /* Ваши стили здесь */
+  font-size: 16px;
+  font-weight: 700;
+}
