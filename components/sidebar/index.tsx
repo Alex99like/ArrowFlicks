@@ -21,6 +21,7 @@ export const Sidebar = () => {
       align="flex-start"
       direction="column"
       p={24}
+      m={0}
       h={'100vh'}
     >
       <Group display={'flex'} gap={12} align="center">

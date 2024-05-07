@@ -4,7 +4,8 @@ import { RequestMovieCards } from '@/types/movie'
 import { fetchApi } from '../fetch-api'
 
 export const getMovies = async (
-  params: Record<string, string | null | undefined>
+  params: Record<string, string | null | undefined>,
+  page: string
 ) => {
   const query: Record<string, string | null | undefined> = {
     language: 'en-US',
@@ -12,8 +13,8 @@ export const getMovies = async (
     primary_release_year: params.release,
     'vote_average.gte': params.from,
     'vote_average.lte': params.to,
-
-    sort_by: '',
+    sort_by: params.sort,
+    page,
   }
 
   const param: Record<string, string> = {}

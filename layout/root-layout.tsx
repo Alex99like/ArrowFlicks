@@ -4,13 +4,7 @@ import { PropsWithChildren } from 'react'
 
 export const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <Flex
-      gap="md"
-      justify="flex-start"
-      align="flex-start"
-      direction="row"
-      h={'100vh'}
-    >
+    <Flex justify="flex-start" align="flex-start" direction="row" h={'100%'}>
       <Sidebar />
       {children}
     </Flex>
