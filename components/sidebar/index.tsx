@@ -14,7 +14,7 @@ export const Sidebar = () => {
 
   return (
     <Flex
-      gap="md"
+      gap={80}
       w={280}
       bg={'#F2EBF9'}
       justify="flex-start"
@@ -29,7 +29,7 @@ export const Sidebar = () => {
           ArrowFlicks
         </Text>
       </Group>
-      <Flex direction={'column'} w="100%" gap={10} mt={40}>
+      <Flex direction={'column'} w="100%" gap={10}>
         <NavLink
           component={Link}
           href={'/'}
