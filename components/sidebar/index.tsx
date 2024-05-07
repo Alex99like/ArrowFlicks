@@ -15,7 +15,7 @@ export const Sidebar = () => {
   return (
     <Flex
       gap={80}
-      w={280}
+      miw={280}
       bg={'#F2EBF9'}
       justify="flex-start"
       align="flex-start"
